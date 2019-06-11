@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630D34F7227D323C0006D408 /* BarChartContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630D34F6227D323C0006D408 /* BarChartContainerView.xib */; };
+		630D34F9227D36B20006D408 /* BarChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D34F8227D36B20006D408 /* BarChartContainerView.swift */; };
+		630D352A227F4AFE0006D408 /* TripleBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D3529227F4AFE0006D408 /* TripleBarChart.swift */; };
+		630D352C227F4BE20006D408 /* TripleBarChartContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630D352B227F4BE20006D408 /* TripleBarChartContainer.xib */; };
+		630D352E227F4BF30006D408 /* TripleBarChartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D352D227F4BF30006D408 /* TripleBarChartContainer.swift */; };
+		630D3540228127760006D408 /* TripleBarGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D353F228127750006D408 /* TripleBarGraphViewController.swift */; };
+		6327FEDB228E54050061E249 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327FEDA228E54050061E249 /* LineChartViewController.swift */; };
+		6327FEDD228E542A0061E249 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327FEDC228E542A0061E249 /* LineChartView.swift */; };
+		6327FEE0228E547B0061E249 /* LineChartContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327FEDF228E547B0061E249 /* LineChartContainer.swift */; };
+		6327FEE2228E54860061E249 /* LineChartContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6327FEE1228E54860061E249 /* LineChartContainer.xib */; };
 		63822236226FBB4F007BB9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63822235226FBB4F007BB9BF /* AppDelegate.swift */; };
-		63822238226FBB4F007BB9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63822237226FBB4F007BB9BF /* ViewController.swift */; };
+		63822238226FBB4F007BB9BF /* BarGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63822237226FBB4F007BB9BF /* BarGraphViewController.swift */; };
 		6382223B226FBB4F007BB9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63822239226FBB4F007BB9BF /* Main.storyboard */; };
 		6382223D226FBB50007BB9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6382223C226FBB50007BB9BF /* Assets.xcassets */; };
 		63822240226FBB50007BB9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6382223E226FBB50007BB9BF /* LaunchScreen.storyboard */; };
+		6382224B226FF2A9007BB9BF /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6382224A226FF2A9007BB9BF /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		630D34F6227D323C0006D408 /* BarChartContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarChartContainerView.xib; sourceTree = "<group>"; };
+		630D34F8227D36B20006D408 /* BarChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartContainerView.swift; sourceTree = "<group>"; };
+		630D3529227F4AFE0006D408 /* TripleBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleBarChart.swift; sourceTree = "<group>"; };
+		630D352B227F4BE20006D408 /* TripleBarChartContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripleBarChartContainer.xib; sourceTree = "<group>"; };
+		630D352D227F4BF30006D408 /* TripleBarChartContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleBarChartContainer.swift; sourceTree = "<group>"; };
+		630D353F228127750006D408 /* TripleBarGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleBarGraphViewController.swift; sourceTree = "<group>"; };
+		6327FEDA228E54050061E249 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		6327FEDC228E542A0061E249 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		6327FEDF228E547B0061E249 /* LineChartContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartContainer.swift; sourceTree = "<group>"; };
+		6327FEE1228E54860061E249 /* LineChartContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartContainer.xib; sourceTree = "<group>"; };
 		63822232226FBB4F007BB9BF /* BarGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63822235226FBB4F007BB9BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63822237226FBB4F007BB9BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63822237226FBB4F007BB9BF /* BarGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphViewController.swift; sourceTree = "<group>"; };
 		6382223A226FBB4F007BB9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6382223C226FBB50007BB9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6382223F226FBB50007BB9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63822241226FBB50007BB9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6382224A226FF2A9007BB9BF /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +57,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		630D34FD227DE58A0006D408 /* BarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				6382224A226FF2A9007BB9BF /* BarChartView.swift */,
+				630D34F8227D36B20006D408 /* BarChartContainerView.swift */,
+				630D34F6227D323C0006D408 /* BarChartContainerView.xib */,
+			);
+			path = BarGraph;
+			sourceTree = "<group>";
+		};
+		630D34FE227DE59C0006D408 /* TripleBarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				630D3529227F4AFE0006D408 /* TripleBarChart.swift */,
+				630D352B227F4BE20006D408 /* TripleBarChartContainer.xib */,
+				630D352D227F4BF30006D408 /* TripleBarChartContainer.swift */,
+			);
+			path = TripleBarGraph;
+			sourceTree = "<group>";
+		};
+		6327FEDE228E54450061E249 /* LineChartGraph */ = {
+			isa = PBXGroup;
+			children = (
+				6327FEDC228E542A0061E249 /* LineChartView.swift */,
+				6327FEDF228E547B0061E249 /* LineChartContainer.swift */,
+				6327FEE1228E54860061E249 /* LineChartContainer.xib */,
+			);
+			path = LineChartGraph;
+			sourceTree = "<group>";
+		};
 		63822229226FBB4F007BB9BF = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +106,13 @@
 		63822234226FBB4F007BB9BF /* BarGraph */ = {
 			isa = PBXGroup;
 			children = (
+				6327FEDE228E54450061E249 /* LineChartGraph */,
+				630D34FE227DE59C0006D408 /* TripleBarGraph */,
+				630D34FD227DE58A0006D408 /* BarGraph */,
 				63822235226FBB4F007BB9BF /* AppDelegate.swift */,
-				63822237226FBB4F007BB9BF /* ViewController.swift */,
+				63822237226FBB4F007BB9BF /* BarGraphViewController.swift */,
+				630D353F228127750006D408 /* TripleBarGraphViewController.swift */,
+				6327FEDA228E54050061E249 /* LineChartViewController.swift */,
 				63822239226FBB4F007BB9BF /* Main.storyboard */,
 				6382223C226FBB50007BB9BF /* Assets.xcassets */,
 				6382223E226FBB50007BB9BF /* LaunchScreen.storyboard */,
@@ -122,6 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6327FEE2228E54860061E249 /* LineChartContainer.xib in Resources */,
+				630D352C227F4BE20006D408 /* TripleBarChartContainer.xib in Resources */,
+				630D34F7227D323C0006D408 /* BarChartContainerView.xib in Resources */,
 				63822240226FBB50007BB9BF /* LaunchScreen.storyboard in Resources */,
 				6382223D226FBB50007BB9BF /* Assets.xcassets in Resources */,
 				6382223B226FBB4F007BB9BF /* Main.storyboard in Resources */,
@@ -135,8 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63822238226FBB4F007BB9BF /* ViewController.swift in Sources */,
+				630D352E227F4BF30006D408 /* TripleBarChartContainer.swift in Sources */,
+				6327FEDB228E54050061E249 /* LineChartViewController.swift in Sources */,
+				63822238226FBB4F007BB9BF /* BarGraphViewController.swift in Sources */,
 				63822236226FBB4F007BB9BF /* AppDelegate.swift in Sources */,
+				6327FEE0228E547B0061E249 /* LineChartContainer.swift in Sources */,
+				630D352A227F4AFE0006D408 /* TripleBarChart.swift in Sources */,
+				6327FEDD228E542A0061E249 /* LineChartView.swift in Sources */,
+				6382224B226FF2A9007BB9BF /* BarChartView.swift in Sources */,
+				630D34F9227D36B20006D408 /* BarChartContainerView.swift in Sources */,
+				630D3540228127760006D408 /* TripleBarGraphViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

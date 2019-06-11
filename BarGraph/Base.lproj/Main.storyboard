@@ -1,24 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d2N-g0-9yI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BarGraphViewController" customModule="BarGraph" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A91-Fz-eFX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="628"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-Df-Sam">
+                                <rect key="frame" x="131" y="637" width="113" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EIB-kd-Gr7"/>
+                                </constraints>
+                                <state key="normal" title="Show Line Chart"/>
+                                <connections>
+                                    <action selector="addCharts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="47t-s8-2fX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ciH-Df-Sam" firstAttribute="top" secondItem="A91-Fz-eFX" secondAttribute="bottom" constant="9" id="9o7-Oj-g6t"/>
+                            <constraint firstItem="A91-Fz-eFX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IUF-6B-2Ui"/>
+                            <constraint firstItem="A91-Fz-eFX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RC3-VL-snY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ciH-Df-Sam" secondAttribute="bottom" id="RWV-Wv-h5d"/>
+                            <constraint firstItem="ciH-Df-Sam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="afI-3F-0j1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A91-Fz-eFX" secondAttribute="trailing" id="qtZ-kW-rK2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="First" id="m8g-LX-5Xz">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="uNE-KB-Q3h">
+                            <connections>
+                                <segue destination="Cgd-10-uJG" kind="show" id="cUx-jf-Ucj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="stackView" destination="A91-Fz-eFX" id="x3S-s5-wGG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="ni9-8b-SBj">
+            <objects>
+                <viewController id="Cgd-10-uJG" customClass="TripleBarGraphViewController" customModule="BarGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5kZ-0D-1Qq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ncA-5N-KqR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="529"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nA-Sm-55b">
+                                <rect key="frame" x="134.5" y="593" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3hT-If-ant"/>
+                                </constraints>
+                                <state key="normal" title="show Triple Bar"/>
+                                <connections>
+                                    <action selector="showTripleBar:" destination="Cgd-10-uJG" eventType="touchUpInside" id="nae-Sn-k5B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4nA-Sm-55b" firstAttribute="top" secondItem="ncA-5N-KqR" secondAttribute="bottom" id="cf3-0y-Uzw"/>
+                            <constraint firstItem="ncA-5N-KqR" firstAttribute="trailing" secondItem="9pd-Hb-uXS" secondAttribute="trailing" id="im2-z8-ztU"/>
+                            <constraint firstItem="ncA-5N-KqR" firstAttribute="top" secondItem="9pd-Hb-uXS" secondAttribute="top" id="lge-fX-kJ0"/>
+                            <constraint firstItem="4nA-Sm-55b" firstAttribute="centerX" secondItem="5kZ-0D-1Qq" secondAttribute="centerX" id="mdR-P2-nx3"/>
+                            <constraint firstItem="4nA-Sm-55b" firstAttribute="bottom" secondItem="9pd-Hb-uXS" secondAttribute="bottom" id="szl-bE-W9x"/>
+                            <constraint firstItem="ncA-5N-KqR" firstAttribute="leading" secondItem="9pd-Hb-uXS" secondAttribute="leading" id="wCc-5x-oP9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9pd-Hb-uXS"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Second" id="UxZ-D5-gna">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="2dc-8x-mGR">
+                            <connections>
+                                <segue destination="nec-9R-qwq" kind="show" id="NFf-FL-phC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="stackView" destination="ncA-5N-KqR" id="rhn-zV-XTr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yk4-dM-auu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Line Chart View Controller-->
+        <scene sceneID="Grq-iC-R1H">
+            <objects>
+                <viewController id="nec-9R-qwq" customClass="LineChartViewController" customModule="BarGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5or-vq-njB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTx-7h-y1Y">
+                                <rect key="frame" x="0.0" y="593" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8zy-Wr-cir"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Hmy-Uj-GvW"/>
+                                </constraints>
+                                <state key="normal" title="show Line Chart"/>
+                                <connections>
+                                    <action selector="showTripleBar:" destination="Cgd-10-uJG" eventType="touchUpInside" id="iFQ-aT-qFR"/>
+                                    <action selector="showTripleBar:" destination="nec-9R-qwq" eventType="touchUpInside" id="inP-HS-zhn"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tfs-xZ-epd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="529"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tfs-xZ-epd" firstAttribute="top" secondItem="Uty-ml-aZt" secondAttribute="top" id="3Vg-VT-N35"/>
+                            <constraint firstItem="Uty-ml-aZt" firstAttribute="bottom" secondItem="FTx-7h-y1Y" secondAttribute="bottom" id="Ccj-Br-bF7"/>
+                            <constraint firstItem="tfs-xZ-epd" firstAttribute="trailing" secondItem="Uty-ml-aZt" secondAttribute="trailing" id="Lru-fn-4Jp"/>
+                            <constraint firstItem="FTx-7h-y1Y" firstAttribute="top" secondItem="tfs-xZ-epd" secondAttribute="bottom" id="RlW-XI-hQ9"/>
+                            <constraint firstItem="tfs-xZ-epd" firstAttribute="leading" secondItem="Uty-ml-aZt" secondAttribute="leading" id="eZR-cm-ON3"/>
+                            <constraint firstItem="FTx-7h-y1Y" firstAttribute="leading" secondItem="Uty-ml-aZt" secondAttribute="leading" id="gXo-Pl-pGA"/>
+                            <constraint firstItem="Uty-ml-aZt" firstAttribute="trailing" secondItem="FTx-7h-y1Y" secondAttribute="trailing" id="ru4-YN-Ji2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uty-ml-aZt"/>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="tfs-xZ-epd" id="g1B-NO-F8T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF0-su-ubE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hMy-Tn-98Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d2N-g0-9yI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zej-Fw-wTf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qen-r9-Pvm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chb-Cm-wZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
